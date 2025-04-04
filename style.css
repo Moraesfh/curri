@@ -1,0 +1,77 @@
+body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    width: 89%;
+    max-width: 900px;
+    background-color: silver;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0px;
+    border-radius: 20px;
+
+}
+
+/* Barra lateral */
+.sidebar {
+    width: 30%;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px; 
+}
+
+.profile img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info h2, .apa h3 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+}
+
+.apa ul {
+    list-style: none;
+    padding: 0;
+}
+
+.apa li {
+    background: black;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Conteúdo principal */
+.main-content {
+    width: 70%;
+    padding: 20px;
+}
+
+
+ .education {
+    margin-bottom: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    .sidebar, .main-content {
+        width: 100%;
+    }
+}
